@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Bacasime+Antique&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Agdasima', sans-serif !important;
+    scroll-behavior: smooth;
+    background-color: var(--flushwhite-color);
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 5% auto;
+}
+.product-area{
+    width: 18%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+}
+.img-area{
+    position: relative;
+    width: 100%;
+}
+.img-area img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.product-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.product-overlay:hover{
+    opacity: .9;
+    background-color:rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-in;
+}
+.nav-link:hover{
+    color: #ff4757 !important;
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.overlay a{
+    margin: 5px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 5px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn-1:hover{
+    background-color: rgba(113, 237, 102, 0.803);
+    transition: .3s;
+    transform: scale(1.04);
+}
+.btn-2{
+    display: inline-block;
+    padding: 5px 15px;
+    background-color:skyblue;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn-2:hover{
+    background-color:yellowgreen;
+    transition: .3s;
+    transform: scale(1.04);
+}
+.info-area{
+    padding: 10px 20px;
+    text-align: center;
+    background-color: black;
+}
+.info-area h3{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+.rating{
+    margin-bottom: 10px;
+}
+.rating span{
+    color: white;
+}
+.checked{
+    color: orange !important;
+}
+.product-price{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.icon-1{
+    position: relative;
+    margin-left: 5%;
+}
+.wish{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    margin-left: 65%;
+}
+.cart{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.cart:hover,.wish:hover{
+    color: #ff4757;
+    transform: scale(1.03);
+    transition: .3s ease;
+    
+}
+
+/* banner  */
+
+.banner{
+    background-image: url(images/banner-women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    
+}
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.banner h3{
+    font-size: 70px;
+}
+
+.pagination{
+    justify-content: center;
+}
+
+/* Footer  */
+footer{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 163, 226);
+}
+
+
+
+
+/* Responsive  */
+
+
+@media (max-width: 1055px){
+    .product-area{
+        width: 22%;
+    }
+}
+@media (max-width: 855px){
+    .product-area{
+        width: 30%;  
+    }
+}
+@media (max-width: 680px){
+    .product-area{
+        width: 47%;  
+    }
+
+}
+@media (max-width: 560px){
+    .product-area{
+        width: 100%;  
+    }
+}
+@media (max-width : 992px){
+    .cart , .wish{
+        display: none;
+    }
+}
+@media (max-width :5000px){
+    .nav-item > span>a{
+        display: none; 
+    }
+}
+@media (max-width : 992px){
+    .nav-item>span> a {
+        display: block;
+    }
+}

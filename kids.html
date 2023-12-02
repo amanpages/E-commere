@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids-Product Page</title>
+    <!-- Icon for Browser (Favicon) -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <!-- css here  -->
+    <link rel="stylesheet" href="kids.css">
+    <!-- Font Style added  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap added  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <!-- nav bar here  -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/favicon.jpg" alt="Logo" width="50" class="d-inline-block align-text-center">
+                    Stitch
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="Men.html">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="women.html">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="kids.html" style="color: #ff4757";>Kids</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Help
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="about.html">About US</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <span><a class="nav-link" href="cart.html">Cart <sup><span id="cart-count-2">0</span></sup></a></span>
+                        <span><a class="nav-link" href="">Wishlist</a></span>
+                      </li>
+                </li>
+            </ul>
+            <button class="wish"><i class="fa-regular fa-star fa-xl"></i></button>
+            <a href="cart.html"><button class="cart"><i class="fa-solid fa-bag-shopping fa-xl"> <sup><span id="cart-count">0</span></sup></i></button></a>
+        </div>
+        </div>
+    </nav>
+    </header>
+    <!-- banner here  -->
+    <section>
+        <div class="banner">
+            <div class="container">
+                <div class="content">
+                  <h3>Get Ready <br>Winter Is Coming...</h3>
+            </div>
+          </div>
+    </section>
+    <!-- products section  -->
+    <section>
+    <div class="wrapper">
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 3.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#"class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Fried T-Shirt</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star half-checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 599
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 3.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Fried T-Shirt</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 1299
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 3.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Fried T-Shirt</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 799
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 3.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Fried T-Shirt</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 999
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 3.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Fried T-Shirt</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 599
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 5.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Hoodie Tom And Jerry</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 599
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 5.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Hoodie Tom And Jerry</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 599
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 5.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Hoodie Tom And Jerry</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 799
+                </div>
+            </div>
+        </div>
+
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 5.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Hoodie Tom And Jerry</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 599
+                </div>
+            </div>
+        </div>
+        <div class="product-area">
+            <div class="img-area">
+                <img src="images/kids 5.jpg" alt="">
+                <div class="product-overlay">
+                    <div class="overlay">
+                        <a href="#" class="btn-1" onclick="addToCart()">Add to Cart</a>
+                        <a href="#" class="btn-2">Wishlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-area">
+                <h3>Hoodie Tom And Jerry</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product-price">
+                    &#8377 599
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- pagination section  -->
+    <section>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item "><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item active"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link disabled" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </section>
+    <footer>
+        <p>&COPY; 2023 || All Rights Reserved to Stitch Clothing</p>
+    </footer>
+      <script>
+        function addToCart() {
+          var cartCount = parseInt(document.getElementById('cart-count').innerText);
+          var cartCount = parseInt(document.getElementById('cart-count-2').innerText);
+          cartCount++;
+    
+          document.getElementById('cart-count').innerText = cartCount;
+          document.getElementById('cart-count-2').innerText = cartCount;
+    
+          // alert for customer
+          alert('Item added to cart!');
+        }
+      </script>
+
+      <!-- bootstrap Script  -->
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
